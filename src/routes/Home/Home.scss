@@ -1,0 +1,265 @@
+section {
+    padding: .875rem;
+    grid-area: main;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.75rem;
+    width: 100%;
+    padding: .875rem;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 8px 5px 8px 1px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 8px 5px 8px 1px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 8px 5px 8px 1px rgba(0, 0, 0, 0.17);
+
+    .cards-stats {
+        height: 35%;
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        padding: .7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .card {
+            cursor: pointer;
+            width: 30%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: .68rem 1.875rem;
+            border-radius: 10px;
+            color: #000;
+            gap: .8rem;
+
+            .title-card {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+
+                .card-icon {
+                    font-size: 28px;
+                }
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            span {
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            p {
+                font-weight: 600;
+            }
+
+        }
+
+        .initialized {
+            background-color: #F4DEEC;
+        }
+
+        .running {
+            background-color: #feefc1;
+        }
+
+        .finished {
+            background-color: #ccf6e3;
+        }
+    }
+
+    .stats {
+        display: flex;
+        gap: .8rem;
+        align-items: center;
+        height: 60%;
+
+        .left-stats {
+            display: flex;
+            flex-direction: column;
+            padding: .8rem;
+            gap: .8rem;
+
+            width: 50%;
+            height: 100%;
+
+            .target-card {
+                display: flex;
+                height: 50%;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: #f4f4f4;
+                border-radius: 20px;
+                padding: .8rem;
+
+                .title-area {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: .3rem;
+                    margin-bottom: 1.2rem;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        gap: .9rem;
+
+                        .target-icon {
+                            font-size: 24px;
+                        }
+
+                        h2 {
+                            font-weight: 500;
+                        }
+                    }
+
+                    .settings-icon {
+                        cursor: pointer;
+                        font-size: 24px;
+                        margin-right: .5rem;
+                    }
+                }
+
+                .target-info {
+                    margin: 0 1.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 36px;
+                    }
+
+                    .info-target {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .current-card {
+                display: flex;
+                height: 50%;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: #f4f4f4;
+                border-radius: 20px;
+                padding: .8rem;
+
+                .title-area {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: .3rem;
+                    margin-bottom: 1.2rem;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        gap: .9rem;
+
+                        .current-icon {
+                            font-size: 24px;
+                        }
+
+                        h2 {
+                            font-weight: 500;
+                        }
+                    }
+
+                    .settings-icon {
+                        cursor: pointer;
+                        font-size: 24px;
+                        margin-right: .5rem;
+                    }
+                }
+
+                .current-info {
+                    margin: 0 1.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 36px;
+                    }
+
+                    .info-current {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .right-stats {
+            display: flex;
+            width: 50%;
+            height: 100%;
+
+            .box-stats {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: .5rem;
+                margin: .8rem;
+                padding: .9rem;
+                border-radius: 20px;
+                background-color: #f4f4f4;
+
+                .title-area {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: .5rem;
+                    margin-bottom: 1.2rem;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        gap: .9rem;
+
+                        h2 {
+                            font-weight: 500;
+                        }
+
+                        .box-icon {
+                            font-size: 28px;
+                        }
+                    }
+
+                    .setting {
+                        cursor: pointer;
+                        margin-right: .8rem;
+                        font-size: 24px;
+                    }
+                }
+
+                .content-area {
+                    height: 100%;
+                    display: flex;
+                    padding: .8rem;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}

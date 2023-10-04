@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&family=Poppins:wght@100;300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.grid-app {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+        'sidebar header header header'
+        'sidebar main main main';
+    height: 100vh;
+}
